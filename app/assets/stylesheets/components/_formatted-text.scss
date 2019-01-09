@@ -1,8 +1,0 @@
-@import "govuk-frontend/helpers/all";
-
-.app-c-formatted-text {
-  @include govuk-font(19);
-
-  margin: 0;
-  white-space: pre-wrap;
-}

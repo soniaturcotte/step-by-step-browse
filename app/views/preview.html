@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Preview
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      Preview
+    </h1>
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Share
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <p>Copy and send this link to someone and they’ll be able to preview your draft on GOV.UK.</p>
+        <p><a href="">https://draft-origin.integration.publishing.service.gov.uk/news/page-address-you-haven-t-entered-a-title-yet</a></p>
+
+        <button type="submit" class="govuk-button secondary-button-quiet">
+          Copy link
+        </button>
+      </div>
+    </details>
+
+  </div>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <div class="govuk-tabs" data-module="tabs">
+        <h2 class="govuk-tabs__title">
+          Contents
+        </h2>
+
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#mobile">
+              Mobile
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#desktop-tablet">
+              Desktop and tablet
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#google">
+              Search engine snippet
+            </a>
+          </li>
+         <!--  <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#email-update">
+              Email update
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#govuk-feature">
+              GOV.UK feature
+            </a>
+          </li> -->
+        </ul>
+
+        <section class="govuk-tabs__panel" id="mobile">
+          <img class="preview-mobile" src="/public/images/preview-mobile-example.svg" alt="">
+        </section>
+        <section class="govuk-tabs__panel govuk-!-padding-0" id="desktop-tablet">
+          <img class="preview-desktop" src="/public/images/preview-desktop-2.png" alt="">
+        </section>
+        <section class="govuk-tabs__panel" id="google">
+           <img class="preview-google" src="/public/images/google-snippet-example.png" alt="">
+        </section>
+       <!--  <section class="govuk-tabs__panel" id="email-update">
+        </section>
+        <section class="govuk-tabs__panel" id="govuk-feature">
+        </section> -->
+      </div>
+
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,9 +1,0 @@
-<% content_for :back_link, render_back_link(href: document_path(@document)) %>
-<% content_for :title, t("preview.show.title", title: @document.title_or_fallback) %>
-
-<%= render "components/page_preview",
-  title: @document.title,
-  base_path: @document.base_path,
-  description: @document.summary,
-  url: DocumentUrl.new(@document).secret_preview_url
-%>

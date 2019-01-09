@@ -1,8 +1,0 @@
-<% content_for :back_link, render_back_link(href: new_document_path) %>
-<% content_for :title, t("new_document.guidance.title") %>
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <%= render_govspeak(File.read("app/views/new_document/guidance.govspeak.md")) %>
-  </div>
-</div>

@@ -1,103 +1,28 @@
-# Content Publisher
+# GOV.UK Prototype Kit · [![Greenkeeper badge](https://badges.greenkeeper.io/alphagov/govuk-prototype-kit.svg)](https://greenkeeper.io/)
 
-A unified publishing application for content on GOV.UK
+Go to the [GOV.UK Prototype Kit site](https://govuk-prototype-kit.herokuapp.com/docs) to download the latest version and read the documentation.
 
-## Nomenclature
+## About the Prototype Kit
 
-  * Content - Some text ([and related fields][content-schemas]) a user wants to publish
-  * Revision - A version of a piece of content in a particular locale
-  * Edition - A revision that is in the Publishing API
-  * Document - All revisions of a piece of content in a particular locale
+The Prototype Kit provides a simple way to make interactive prototypes that look like pages on GOV.UK. These prototypes can be used to show ideas to people you work with, and to do user research.
 
+Read the [project principles](https://govuk-prototype-kit.herokuapp.com/docs/principles).
 
-## Technical documentation
+## Security
 
-This is a Ruby on Rails application.
+If you publish your prototypes online, they **must** be protected by a [username and password](https://govuk-prototype-kit.herokuapp.com/docs/publishing-on-heroku). This is to prevent members of the public finding prototypes and thinking they are real services.
 
-### Dependencies
+You must protect user privacy at all times, even when using prototypes. Prototypes made with the kit look like GOV.UK, but do not have the same security provisions. Always make sure you are handling user data appropriately.
 
-- [postgresql][] - provides a backing database
-- [yarn][] - package manager for JavaScripts
-- [imagemagick][] - image manipulation library
+## Installation instructions
 
-### Running the application
+- [Installation guide for new users (non technical)](https://govuk-prototype-kit.herokuapp.com/docs/install/introduction)
+- [Installation guide for developers (technical)](https://govuk-prototype-kit.herokuapp.com/docs/install/developer-install-instructions)
 
-The first time you run this application you'll want to set you
-[permissions](#permissions).
+## Community
 
-Then, if you are running on the [GOV.UK development VM][dev-vm]:
+We have two Slack channels for the Prototype Kit. You'll need a government email address to join them.
 
-```
-cd /var/govuk/govuk-puppet/development-vm
-bowl content-publisher
-```
-
-You should be able to access the app at: http://content-publisher.dev.gov.uk/
-
-Otherwise, on your machine:
-
-```
-./startup.sh
-```
-
-### Running the test suite
-
-```
-yarn install
-bundle exec rake
-```
-
-### Permissions
-
-Functionality of this application is enabled with permissions. There is a
-`pre_release_features` permission, for using functionality not yet available to
-users, and there is a `debug` permission, to access debug and documentation in
-app.
-
-To enable these permissions in a development environment run:
-
-```
-bundle exec rake developer_permissions
-```
-
-To enable them for your GOV.UK account add them to your account in
-[signon](https://github.com/alphagov/signon).
-
-### Importing Whitehall news documents
-
-To populate your local database with [Whitehall][whitehall-repo] content there
-is a task in Whitehall to export data and a task in Content Publisher to
-import that output.
-
-To export from Whitehall, you need to have a cloned copy of Whitehall with a
-populated database, cd into the whitehall directory and run:
-
-```
-bundle exec rake export:news_documents 2>&1 | grep created_at > /tmp/whitehall-export.json
-```
-
-This will take a while to run (~30 mins), this can be reduced by limiting the
-output with [filters][export-filters]
-
-To import this exported file into Content Publisher, you need to cd into the
-content publisher directory and run:
-
-```
-bundle exec rake import:whitehall_news INPUT=/tmp/whitehall-export.json
-```
-
-### User support
-
-- [Retiring and removing documents](docs/retiring-and-removing-documents.md)
-
-## Licence
-
-[MIT License](LICENCE)
-
-[content-schemas]: https://github.com/alphagov/govuk-content-schemas
-[postgresql]: https://www.postgresql.org/
-[yarn]: https://yarnpkg.com/
-[imagemagick]: https://www.imagemagick.org/script/index.php
-[dev-vm]: https://github.com/alphagov/govuk-puppet/tree/master/development-vm
-[whitehall-repo]: https://github.com/alphagov/whitehall
-[export-filters]: https://github.com/alphagov/whitehall/blob/master/lib/tasks/export.rake#L153
+* [Slack channel for users of the Prototype Kit](https://ukgovernmentdigital.slack.com/messages/prototype-kit/)
+* [Slack channel for developers of the Prototype Kit](https://ukgovernmentdigital.slack.com/messages/prototype-kit-dev/)
+# govuk-content-publisher-prototype

@@ -1,1 +1,1 @@
-web: bundle exec unicorn -c ./config/unicorn.rb -p ${PORT:-3221}
+web: node ./node_modules/gulp/bin/gulp generate-assets && node server.js

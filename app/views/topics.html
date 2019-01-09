@@ -1,0 +1,278 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Topics
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="content-summary-draft">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">Topics</h1>
+
+      <p>Select topics that describe what your content is about. Topics group content on GOV.UK to make it easier to find.</p>
+      
+      <p>You can select any relevant topics. Choose the most specific topics you can.</p>
+
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <aside class="app-related-items" role="complementary">
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list govuk-!-font-size-16">
+              <li>
+                <a class="govuk-link" href="#">
+                  Full guidance on topics
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" href="#">
+                  Suggest a new topic
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" href="#">
+                  Suggest a change to a topic
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+    </div>
+  </div>
+
+  <div class="app-miller-columns govuk-checkboxes--small govuk-!-margin-top-4" tabindex="1">
+    <ul id="root">
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Business and industry</label></div>
+        <ul id="business-and-industry">
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Business and the environment</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Corporate information</label></div>
+      </li>
+      <li>
+        <div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Crime, justice and law</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Administrative justice reform</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Attorney General guidance to the legal profession</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Byelaws</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Civil justice reform</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Counter-terrorism</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Courts, sentencing and tribunals</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Crime prevention</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Criminal justice reform</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Criminal record disclosure</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Data protection</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Domestic violence</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Family justice system</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Forced marriage</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Justice system transparency</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Knife, gun and gang crime</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Law and practice</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Legal aid</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Legal aid reform</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Policing</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Prisons and probation</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Reoffending and rehabilitation</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Reporting crimes and getting compensation</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Sentencing reform</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Statutory rights</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Victims of crime</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Violence against women and girls</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Young people and the law</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Your rights and the law</label></div></li>
+        </ul>
+      </li>
+      <li>
+        <div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Defence and armed forces</label></div>
+        <ul id="defence-and-armed-forces">
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Armed Forces Covenant</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Armed Forces</label></div></li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Armed forces and Ministry of Defence reform</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Education, training and skills</label></div>
+        <ul id="education-training-and-skills">
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Education of disadvantaged children</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Entering and staying in the UK</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Border control</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Environment</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Climate change and energy</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Going and being abroad</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">British nationals overseas</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Government</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Brexit</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Health and social care</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Autism</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Housing, local and community</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Economic development in coastal and seaside areas</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">International</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Anti-corruption</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Life circumstances</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Certificates, register offices, changes of name or gender</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Money</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Business tax</label></div></li>
+        </ul>
+      </li>
+      <li>
+        <div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Parenting, childcare and children's services</a></label></div>
+        <ul id="parenting-childcare">
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Adoption, fostering and surrogacy</label></div>
+            <ul id="adoption-fostering-surrogacy">
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Adoption</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Fostering</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Intercountry adoption</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Special guardianship</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Surrogacy</label></div></li>
+            </ul>
+          </li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Childcare and early years</label></div>
+            <ul id="childcare-and-early-years">
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Data collection for early years and childcare</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Finding childcare</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Local authorities and early years</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Providing childcare</label></div></li>
+            </ul>
+          </li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Children's health and welfare</label></div>
+            <ul id="childrens-health-and-welfare">
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Child poverty</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Children's rights</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label"> Help for children with a long-term illness or disability</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Mental health of children and young people</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Support for children with special educational needs and disabilities (SEND)</label></div></li>
+            </ul>
+          </li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Divorce, separation and legal issues</label></div>
+            <ul id="divorce-separation-and-legal-issues">
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Child custody</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Child maintenance</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Disagreements about parentage</label></div></li>
+            </ul>
+          </li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Financial help if you have children</label></div>
+            <ul id="financial-help-if-you-have-children">
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Child benefit</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Financial help if you have a disabled child</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Financial help if you're a student with children</label></div></li>
+            </ul>
+          </li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Pregnancy and birth</label></div>
+            <ul id="financial-help-if-you-have-children">
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Register the birth of a child</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Working and time off when you're having a baby</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Financial help if you're a student with children</label></div></li>
+            </ul>
+          </li>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Safeguarding and social care for children</label></div>
+            <ul id="safeguarding-social-care-for-children">
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Child and family social work</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Children's social care providers</label></div>
+                <ul id="childrens-social-care-providers">
+                  <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Becoming a children's social care provider</label></div></li>
+                  <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Inspection of children's social care providers</label></div>
+                    <ul id="inspection-childrens-social-care-providers">
+                      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Children's homes and other residential care inspections</label></div></li>
+                      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Incidents, concerns and feedback about children's social care providers</label></div>
+                      </li>
+                      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Inspections of fostering and adoption agencies</label></div></li>
+                      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Inspections of local authority children's services</label></div></li>
+                    </ul>
+                  </li>
+                  <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Social care provider complaints</label></div></li>
+                  <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label"> Safeguarding and child protection</label></div></li>
+                </ul>
+              </li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Looked-after children and children in care</label></div></li>
+              <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label"> Safeguarding and child protection</label></div></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Regional and local government</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Devolution</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Society and culture</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Arts and culture</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Transport</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Aviation</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Welfare</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Benefits entitlement</label></div></li>
+        </ul>
+      </li>
+      <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Work</label></div>
+        <ul>
+          <li><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" type="checkbox"><label class="govuk-label govuk-checkboxes__label">Government graduate schemes</label></div></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="selected-topics">
+    <h2 class="govuk-heading-m">Selected topics</h2>
+    <div class="app-breadcrumb govuk-breadcrumbs">No topic selected</div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+    <form action="content-summary-draft-topic" method="post">
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Changes are applied to a live page as soon as you save. 
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+        If this content has already been published and you add new topics, then the last published edition will appear on those topic pages immediately, before you publish a new edition.
+      </div>
+      </details>
+
+      <div class="govuk-form-group">
+        <button class="govuk-button">Save topics</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
