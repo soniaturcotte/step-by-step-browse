@@ -86,12 +86,11 @@
   a {
     display: block;
     position: relative;
-    padding: 12px 25px 8px 0;
     text-decoration: none;
     @include govuk-font($size: 16)
 
     @include mq(tablet) {
-      padding: 12px $gutter 8px $gutter-half;
+      padding: 0px $gutter 0px $gutter-half;
     }
 
     &:hover {

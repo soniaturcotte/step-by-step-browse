@@ -37,26 +37,12 @@
   {{ govukHeader({
     homepageUrl: "/",
     serviceName: serviceName,
-    serviceUrl: "/",
-    containerClasses: "govuk-header__container--full-width",
-    navigationClasses: "govuk-header__navigation--end",
-    navigation: [
-    {
-      "href": "#",
-      "text": "Switch app"
-    },
-    {
-      "href": "#",
-      "text": "Kamala Khan"
-    },
-    {
-      "href": "#",
-      "text": "Sign out"
-    }
-  ]
+    serviceUrl: "/"
+    
+    
   }) }}
 
-  {% include "includes/app-nav.html" %}
+ 
 
 {% endblock %}
 
@@ -68,38 +54,7 @@
 {% from "footer/macro.njk" import govukFooter %}
 
 {{ govukFooter({
-  navigation: [
-    {
-      columns: 1,
-      items: [
-        {
-          href: "https://support.publishing.service.gov.uk/",
-          text: "Raise a support request"
-        },
-        {
-          href: "feedback",
-          text: "Send us feedback"
-        },
-        {
-          href: "https://www.gov.uk/government/content-publishing ",
-          text: "How to write, publish, and improve content"
-        }
-      ]
-    },
-    {
-      columns: 1,
-      items: [
-        {
-          href: "beta",
-          text: "What the Beta can and cannot do"
-        },
-        {
-          href: "changelog",
-          text: "Publisher updates"
-        }
-      ]
-    }
-  ],
+
   meta: {
     items: [
           {
